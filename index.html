@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlon Santos — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css_/styles.css" />
+
+</head>
+<body>
+
+  <!-- LANG TOGGLE -->
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('pt')">PT</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">MS</a>
+    <ul class="nav-links">
+      <li><a href="#about"    data-pt="Sobre"    data-en="About">Sobre</a></li>
+      <li><a href="#skills"   data-pt="Skills"   data-en="Skills">Skills</a></li>
+      <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+      <li><a href="#contact"  data-pt="Contato"  data-en="Contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-tag" data-pt="Desenvolvedor de Sistemas" data-en="Systems Developer">Desenvolvedor de Sistemas</p>
+      <h1 class="hero-name">Marlon<br><span>Santos</span></h1>
+      <p class="hero-sub"
+         data-pt="Estudante em evolução contínua. Construo soluções reais, documento o processo e refino cada detalhe."
+         data-en="Continuously evolving student. I build real solutions, document the process and refine every detail.">
+        Estudante em evolução contínua. Construo soluções reais, documento o processo e refino cada detalhe.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-pt="Ver Projetos" data-en="See Projects">Ver Projetos</a>
+        <a href="#contact"  class="btn btn-ghost"   data-pt="Entrar em Contato" data-en="Get in Touch">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-graphic"></div>
+    </div>
+    <div class="hero-scroll">
+      <span data-pt="Rolar" data-en="Scroll">Rolar</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SOBRE -->
+  <section id="about">
+    <p class="section-label" data-pt="Sobre mim" data-en="About me">Sobre mim</p>
+    <h2 class="section-title" data-pt="Quem sou eu" data-en="Who I am">Quem sou eu</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-pt="Sou Marlon Santos, estudante de Desenvolvimento de Sistemas. Este espaço é meu ambiente de prática: registro projetos, exercícios, testes de conceito e experimentos que me ajudam a melhorar lógica, programação e construção de soluções reais."
+           data-en="I'm Marlon Santos, a Systems Development student. This space is my practice environment: I track projects, exercises, proof-of-concept tests and experiments that help me improve my logic, coding and real-world problem-solving.">
+          Sou Marlon Santos, estudante de Desenvolvimento de Sistemas. Este espaço é meu ambiente de prática: registro projetos, exercícios, testes de conceito e experimentos que me ajudam a melhorar lógica, programação e construção de soluções reais.
+        </p>
+        <p data-pt="A proposta é simples: evoluir continuamente, documentar o que aprendo e construir uma base sólida para atuar profissionalmente na área de tecnologia."
+           data-en="The goal is simple: grow continuously, document what I learn, and build a solid foundation to work professionally in tech.">
+          A proposta é simples: evoluir continuamente, documentar o que aprendo e construir uma base sólida para atuar profissionalmente na área de tecnologia.
+        </p>
+        <p data-pt="Feedbacks são sempre bem-vindos — qualquer detalhe ajuda a ajustar meu código e meu processo de desenvolvimento."
+           data-en="Feedback is always welcome — every little detail helps me sharpen my code and my development process.">
+          Feedbacks são sempre bem-vindos — qualquer detalhe ajuda a ajustar meu código e meu processo de desenvolvimento.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label" data-pt="Projetos finalizados" data-en="Finished projects">Projetos finalizados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="commit-count">...</div>
+          <div class="stat-label" data-pt="Commits no GitHub" data-en="GitHub commits">Commits no GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label" data-pt="Tecnologias" data-en="Technologies">Tecnologias</p>
+    <h2 class="section-title" data-pt="Stack e Ferramentas" data-en="Stack and Tools">Stack e Ferramentas</h2>
+    <div class="skills-categories">
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title" data-pt="Banco de Dados" data-en="Database">Banco de Dados</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">Game Dev</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">Godot</span>
+        </div>
+      </div>
+
+      <div class="skill-cat">
+        <div class="skill-cat-title">Data / BI</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Pandas</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <p class="section-label" data-pt="O que construí" data-en="What I built">O que construí</p>
+    <h2 class="section-title" data-pt="Projetos" data-en="Projects">Projetos</h2>
+    <div class="projects-grid">
+
+      <a href="https://github.com/msantt/SUITS" class="project-card">
+        <div class="project-num">01</div>
+        <div class="project-title">SUITS</div>
+        <div class="project-desc"
+             data-pt="Sistema de rastreamento jurídico. Acompanhe andamento, status e movimentações de processos no ambiente de advocacia."
+             data-en="Legal tracking system. Follow the progress, status and movements of lawsuits in a law firm environment.">
+          Sistema de rastreamento jurídico. Acompanhe andamento, status e movimentações de processos no ambiente de advocacia.
+        </div>
+        <div class="project-arrow">
+          <span data-pt="Ver repositório" data-en="View repo">Ver repositório</span> →
+        </div>
+      </a>
+
+      <a href="https://github.com/msantt/SistemaDeVendas" class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-title" data-pt="Sistema de Vendas" data-en="Sales System">Sistema de Vendas</div>
+        <div class="project-desc"
+             data-pt="Gestão de estoque e vendas para microempresas. Reduz erros manuais e organiza o fluxo de produtos de forma simples."
+             data-en="Inventory and sales management for micro-businesses. Reduces manual errors and organises product flow simply.">
+          Gestão de estoque e vendas para microempresas. Reduz erros manuais e organiza o fluxo de produtos de forma simples.
+        </div>
+        <div class="project-arrow">
+          <span data-pt="Ver repositório" data-en="View repo">Ver repositório</span> →
+        </div>
+      </a>
+
+      <a href="https://github.com/msantt/App.Fitness" class="project-card">
+        <div class="project-num">03</div>
+        <div class="project-title">App Fitness</div>
+        <div class="project-desc"
+             data-pt="Desafios e competitividade saudável. Metas, apostas amigáveis e disciplina transformada em jogo."
+             data-en="Challenges and healthy competition. Goals, friendly bets and discipline turned into a game.">
+          Desafios e competitividade saudável. Metas, apostas amigáveis e disciplina transformada em jogo.
+        </div>
+        <div class="project-arrow">
+          <span data-pt="Ver repositorio" data-en="View repo">Ver repositorio</span> →
+        </div>
+      </a>
+
+      <a href="https://github.com/msantt/ControleEntrega" class="project-card">
+        <div class="project-num">04</div>
+        <div class="project-title" data-pt="Controle de Entrega" data-en="Delivery Control">Controle de Entrega</div>
+        <div class="project-desc"
+             data-pt="Meu primeiro projeto pessoal. Logística e rastreamento de materiais vinculados ao motorista, eliminando perdas e falhas no fluxo de expedição."
+             data-en="My first personal project. Material logistics and tracking linked to the driver, eliminating losses and failures in the shipping flow.">
+          Meu primeiro projeto pessoal. Logística e rastreamento de materiais vinculados ao motorista, eliminando perdas e falhas no fluxo de expedição.
+        </div>
+        <div class="project-arrow">
+          <span data-pt="Ver repositório" data-en="View repo">Ver repositório</span> →
+        </div>
+    <div class="scroll-next">
+      <div class="scroll-next-arrow">↓</div>
+    </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTATO -->
+  <section id="contact">
+    <p class="section-label" data-pt="Vamos conversar" data-en="Let's talk">Vamos conversar</p>
+    <h2 class="section-title" data-pt="Contato" data-en="Contact">Contato</h2>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p data-pt="Se quiser trocar ideias, tirar dúvidas ou conversar sobre qualquer projeto, fique à vontade. Feedbacks são sempre bem-vindos."
+           data-en="If you want to exchange ideas, ask questions or talk about any project, feel free to reach out. Feedback is always welcome.">
+          Se quiser trocar ideias, tirar dúvidas ou conversar sobre qualquer projeto, fique à vontade. Feedbacks são sempre bem-vindos.
+        </p>
+          <a href="https://github.com/msantt" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+            data-pt="Ver GitHub" data-en="View GitHub">Ver GitHub</a>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/msantt" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <span class="contact-link-icon">⌥</span>
+          <div>
+            <div>GitHub</div>
+            <div class="contact-link-label">Acesse meu github</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/" class="contact-link" target="_blank">
+          <span class="contact-link-icon">◈</span>
+          <div>
+            <div>LinkedIn</div>
+            <div class="contact-link-label" data-pt="Conectar no LinkedIn" data-en="Connect on LinkedIn">Acesse meu LinkedIn</div>
+          </div>
+        </a>
+        <a href="mailto:Dejesusmarlon514@email.com" class="contact-link">
+          <span class="contact-link-icon">✉</span>
+          <div>
+            <div>Email</div>
+            <div class="contact-link-label" data-pt="Mande um email" data-en="Send an email">Mande um email</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>2025 Marlon Santos —
+      <span data-pt="Construído com intenção." data-en="Built with intention.">Construído com intenção.</span>
+    </p>
+  </footer>
+
+  <!-- SETAS FLUTUANTES DE NAVEGACAO -->
+  <div class="scroll-nav">
+    <div class="scroll-btn up hidden">↑</div>
+    <div class="scroll-btn down">↓</div>
+  </div>
+
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
+  <script>
+
+    /* ------------------------------------------
+       IDIOMA — troca PT / EN
+    ------------------------------------------ */
+    function setLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+      document.querySelectorAll('.lang-toggle button').forEach((btn, i) => {
+        btn.classList.toggle('active',
+          (lang === 'pt' && i === 0) || (lang === 'en' && i === 1)
+        );
+      });
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    }
+
+    /* ------------------------------------------
+       SKILLS — dados: nome, site, logo (SimpleIcons CDN)
+    ------------------------------------------ */
+    const SKILLS = {
+      'Python':     { url: 'https://python.org',                                logo: 'https://cdn.simpleicons.org/python' },
+      'Node.js':    { url: 'https://nodejs.org',                                logo: 'https://cdn.simpleicons.org/nodedotjs' },
+      'REST APIs':  { url: 'https://restfulapi.net',                            logo: 'https://cdn.simpleicons.org/fastapi' },
+      'HTML':       { url: 'https://developer.mozilla.org/docs/Web/HTML',       logo: 'https://cdn.simpleicons.org/html5' },
+      'CSS':        { url: 'https://developer.mozilla.org/docs/Web/CSS',        logo: 'https://cdn.simpleicons.org/css3' },
+      'JavaScript': { url: 'https://developer.mozilla.org/docs/Web/JavaScript', logo: 'https://cdn.simpleicons.org/javascript' },
+      'Git':        { url: 'https://git-scm.com',                               logo: 'https://cdn.simpleicons.org/git' },
+      'GitHub':     { url: 'https://github.com',                                logo: 'https://cdn.simpleicons.org/github' },
+      'Linux':      { url: 'https://kernel.org',                                logo: 'https://cdn.simpleicons.org/linux' },
+      'MySQL':      { url: 'https://mysql.com',                                 logo: 'https://cdn.simpleicons.org/mysql' },
+      'PostgreSQL': { url: 'https://postgresql.org',                            logo: 'https://cdn.simpleicons.org/postgresql' },
+      'SQLite':     { url: 'https://sqlite.org',                                logo: 'https://cdn.simpleicons.org/sqlite' },
+      'Unity':      { url: 'https://unity.com',                                 logo: 'https://cdn.simpleicons.org/unity' },
+      'C#':         { url: 'https://dotnet.microsoft.com/languages/csharp',     logo: 'https://cdn.simpleicons.org/csharp' },
+      'Godot':      { url: 'https://godotengine.org',                           logo: 'https://cdn.simpleicons.org/godotengine' },
+      'Excel':      { url: 'https://microsoft.com/excel',                       logo: 'https://cdn.simpleicons.org/microsoftexcel' },
+      'Power BI':   { url: 'https://powerbi.microsoft.com',                     logo: 'https://cdn.simpleicons.org/powerbi' },
+      'Pandas':     { url: 'https://pandas.pydata.org',                         logo: 'https://cdn.simpleicons.org/pandas' },
+    };
+
+    /* ------------------------------------------
+       SKILLS — logica do tooltip (balao)
+    ------------------------------------------ */
+    let activeTooltip = null;
+
+    function buildTooltip(skill, data) {
+      const tip = document.createElement('div');
+      tip.className = 'skill-tooltip';
+      tip.innerHTML = `
+        <img src="${data.logo}/ffffff" alt="${skill}" onerror="this.style.display='none'" />
+        <span class="skill-tooltip-name">${skill}</span>
+        <a href="${data.url}" target="_blank" rel="noopener" class="skill-tooltip-link">Visitar site</a>
+      `;
+      return tip;
+    }
+
+    function closeTooltip() {
+      if (activeTooltip) {
+        activeTooltip.classList.remove('visible');
+        setTimeout(() => activeTooltip?.remove(), 200);
+        activeTooltip = null;
+      }
+    }
+
+    function toggleTooltip(tag, skill) {
+      if (activeTooltip && tag.contains(activeTooltip)) { closeTooltip(); return; }
+      closeTooltip();
+      const data = SKILLS[skill];
+      if (!data) return;
+      const tip = buildTooltip(skill, data);
+      tag.style.position = 'relative';
+      tag.appendChild(tip);
+      activeTooltip = tip;
+      requestAnimationFrame(() => tip.classList.add('visible'));
+    }
+
+    /* ------------------------------------------
+       SCROLL FADE — elementos suavemente desaparecem
+       conforme scrollam pra cima. Efeito fluido.
+    ------------------------------------------ */
+    (function initScrollFade() {
+      const elements = document.querySelectorAll(
+        'section, .section-divider, footer'
+      );
+
+      function update() {
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const elTop = rect.top;
+          const windowHeight = window.innerHeight;
+
+          /* Fade suave: quanto mais acima, mais transparente */
+          let opacity = 1;
+          const fadeRange = 400;
+
+          if (elTop < windowHeight * 0.5) {
+            opacity = Math.max(0, (elTop - (-windowHeight)) / fadeRange);
+          }
+
+          el.style.opacity = opacity;
+          el.style.transform = `translateY(${(1 - opacity) * -15}px)`;
+        });
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+
+    /* ------------------------------------------
+       GITHUB COMMITS — soma automaticamente
+       todos os repos publicos do usuario.
+       Troque 'MarlonSantos' pelo seu username.
+    ------------------------------------------ */
+    async function fetchGitHubCommits(username) {
+      const el = document.getElementById('commit-count');
+      try {
+        const res   = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+        const repos = await res.json();
+        if (!Array.isArray(repos)) { el.textContent = '-'; return; }
+
+        let total = 0;
+
+        await Promise.all(repos.map(async (repo) => {
+          try {
+            const r    = await fetch(`https://api.github.com/repos/${username}/${repo.name}/commits?per_page=1`);
+            const link = r.headers.get('Link');
+
+            if (link) {
+              /* GitHub usa Link header pra paginacao — pega o numero da ultima pagina */
+              const match = link.match(/page=(\d+)>; rel="last"/);
+              if (match) total += parseInt(match[1]);
+            } else {
+              const data = await r.json();
+              if (Array.isArray(data)) total += data.length;
+            }
+          } catch { /* repo sem commits ou privado — ignora */ }
+        }));
+
+        el.textContent = total > 0 ? total.toLocaleString() : '-';
+      } catch {
+        el.textContent = '-';
+      }
+    }
+
+    fetchGitHubCommits('MarlonSantos');
+
+    /* ------------------------------------------
+       SCROLL SNAP - Fullscreen sections travadas (otimizado)
+    ------------------------------------------ */
+    const sections = Array.from(document.querySelectorAll('section'));
+    let currentSectionIndex = 0;
+    let isScrolling = false;
+    let scrollTimeout;
+
+    function snapToSection(index) {
+      if (index < 0 || index >= sections.length) return;
+      
+      currentSectionIndex = index;
+      isScrolling = true;
+      
+      sections[index].scrollIntoView({ behavior: 'smooth' });
+      
+      setTimeout(() => {
+        isScrolling = false;
+      }, 600);
+    }
+
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      
+      if (isScrolling) return;
+      
+      scrollTimeout = setTimeout(() => {
+        const scrollPos = window.scrollY;
+        let nearestIndex = 0;
+        let minDistance = Infinity;
+        
+        sections.forEach((section, idx) => {
+          const distance = Math.abs(section.offsetTop - scrollPos);
+          if (distance < minDistance) {
+            minDistance = distance;
+            nearestIndex = idx;
+          }
+        });
+        
+        /* Se não tá exatamente na seção, volta pra mais próxima com resposta rápida */
+        if (Math.abs(sections[nearestIndex].offsetTop - scrollPos) > 80) {
+          snapToSection(nearestIndex);
+        }
+      }, 80);
+    }, { passive: true });
+
+    /* ------------------------------------------
+       SETAS FLUTUANTES - up e down dinâmicas
+    ------------------------------------------ */
+    const upBtn = document.querySelector('.scroll-btn.up');
+    const downBtn = document.querySelector('.scroll-btn.down');
+    
+    /* Click handlers */
+    upBtn.addEventListener('click', () => {
+      if (currentSectionIndex > 0) {
+        snapToSection(currentSectionIndex - 1);
+      }
+    });
+    
+    downBtn.addEventListener('click', () => {
+      if (currentSectionIndex < sections.length - 1) {
+        snapToSection(currentSectionIndex + 1);
+      }
+    });
+    
+    /* Atualiza visibilidade das setas conforme scroll */
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      const footer = document.querySelector('footer');
+      const footerTop = footer.offsetTop;
+      const scrollPos2 = window.scrollY + window.innerHeight;
+      
+      /* Esconde down se chegou perto do footer */
+      if (scrollPos2 > footerTop - 100) {
+        downBtn.classList.add('hidden');
+      } else {
+        downBtn.classList.remove('hidden');
+      }
+      
+      /* Mostra up se rolou pra baixo o suficiente */
+      if (scrollPos > window.innerHeight * 0.5) {
+        upBtn.classList.remove('hidden');
+      } else {
+        upBtn.classList.add('hidden');
+      }
+    });
+
+    /* ------------------------------------------
+       INIT — ativa tooltip nas skill tags
+    ------------------------------------------ */
+    document.addEventListener('DOMContentLoaded', () => {
+
+      document.querySelectorAll('.skill-tag').forEach(tag => {
+        const skill = tag.textContent.trim();
+        if (!SKILLS[skill]) return;
+
+        tag.classList.add('skill-tag--clickable');
+        tag.setAttribute('role', 'button');
+        tag.setAttribute('tabindex', '0');
+
+        tag.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleTooltip(tag, skill);
+        });
+
+        tag.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') toggleTooltip(tag, skill);
+        });
+      });
+
+      /* Clique fora fecha o tooltip */
+      document.addEventListener('click', closeTooltip);
+    });
+
+  </script>
+</body>
+</html>
